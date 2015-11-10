@@ -1,0 +1,10 @@
+setwd('/Users/jfdarre/Documents/NYCDS/Project1')
+LCA = read.csv("LC2007-2012.csv", stringsAsFactors = FALSE, header = T, skip = 1)
+LCB = read.csv("LC2012-2013.csv", stringsAsFactors = FALSE, header = T, skip = 1)
+LCC = read.csv("LC2013-2014.csv", stringsAsFactors = FALSE, header = T, skip = 1)
+LCD = read.csv("LC2014-2015.csv", stringsAsFactors = FALSE, header = T, skip = 1)
+LCE = rbind(LCA, LCB, LCC, LCD)
+LC = tbl_df(LCE)
+save(LC, file = "LC.RData")
+rm(list=ls())
+
