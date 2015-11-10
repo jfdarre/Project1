@@ -1,2 +1,2 @@
 # Project1
-WIP
+Analysis of Lending Club's data
